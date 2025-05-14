@@ -118,9 +118,9 @@ if __name__ == "__main__":
     suma = 0
     n_sim = 10_000
     # intervalos para el algoritmo mejorado
-    interval_i = [1,2,8,9]
+    interval_i = [1,2,6,8,9]
     # lamdas para el algoritmo mejorado
-    lamdas_i = [10, 15, 18, 14]
+    lamdas_i = [10, 15,20, 18, 14]
 
     for _ in range(n_sim):
         suma += poisson_no_homogeneo_adelgazamiento_mejorado(9, lamda_t_b, interval_i, lamdas_i)[1]
